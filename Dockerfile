@@ -8,4 +8,5 @@ RUN npm run build
 
 #Pro Block nur ein FROM - Statement
 FROM nginx
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
